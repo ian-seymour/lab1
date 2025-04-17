@@ -212,10 +212,25 @@ class Node{
 	      t1.insert(9);
 	      t1.insert(90);
 	      t1.insert(22);
-	            
-	      System.out.print("in-order :   ");
-	      t1.inOrderTraversal(t1.root);
-	      System.out.println();
+
+		//Added additional calls to test the new methods:
+	      	System.out.println("pre-order : ");
+		t1.preOrderTraversal(t1.root);
+	      	System.out.println("in-order :   ");
+	      	t1.inOrderTraversal(t1.root);
+		System.out.println("post-order : ");
+		t1.postOrderTraversal(t1.root);
+	      	System.out.println();
+
+		System.out.println("Find if 24 is in BST :");
+		System.out.println(t1.find(t1.root, 24));
+
+		System.out.println("Get min : ");
+		System.out.println(t1.getMin(t1.root));
+
+		System.out.println("Get max : ");
+		System.out.println(t1.getMax(t1.root));
+		System.out.println();
 	           
 	      
 	   }  
