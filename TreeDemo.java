@@ -71,10 +71,16 @@ class Node{
 	   
 	   /*
 	   in-order traversal
+	   Prints every node in order
+	   @param Node root for a BST
 	   */
-	   public void inOrderTraversal(Node root){
-	      //implement in here
-	   }
+	  public void inOrderTraversal(Node root){
+		if (root != null) {
+		  inOrderTraversal(root.left); //go left
+		  System.out.println(root.value); //prints value
+		  inOrderTraversal(root.right); //go right
+		}
+ 	}
 	   
 	   
 	   
